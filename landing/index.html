@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Искра — Истинска химия. Без евтин шум.</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{colors:{plum:{950:'#140a18',900:'#1d0f24',800:'#2a1533',700:'#3a1d45'},ember:{500:'#ff5578',400:'#ff7d97'},jewel:{500:'#10b981',600:'#0d9668'}},fontFamily:{display:['Fraunces','serif'],body:['Inter','sans-serif']}}}}
+</script>
+<style>
+body{background:radial-gradient(1200px 800px at 70% -10%,#3a1d45 0%,#1d0f24 45%,#140a18 100%);}
+.glass{background:rgba(255,255,255,.04);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.10);}
+.glow{box-shadow:0 0 60px rgba(16,185,129,.25),0 20px 60px rgba(0,0,0,.5);}
+.portrait{box-shadow:inset 0 0 80px rgba(0,0,0,.6),0 30px 80px rgba(0,0,0,.55);}
+</style>
+</head>
+<body class="font-body text-white/90 antialiased min-h-screen">
+<header class="max-w-6xl mx-auto flex items-center justify-between px-6 py-6">
+  <div class="font-display text-2xl tracking-tight">Искра<span class="text-ember-500">.</span></div>
+  <div class="flex items-center gap-4 text-sm">
+    <button id="lang" class="glass rounded-full px-4 py-2 hover:border-white/25 transition">EN</button>
+    <a href="#" class="glass rounded-full px-5 py-2 hover:border-white/25 transition" data-i18n="login">Вход</a>
+  </div>
+</header>
+<main class="max-w-6xl mx-auto px-6">
+  <section class="grid lg:grid-cols-[1.1fr_.9fr] gap-12 items-center pt-10 pb-20">
+    <div>
+      <p class="text-jewel-500 text-xs tracking-[.3em] uppercase mb-6" data-i18n="eyebrow">Дискретен кръг</p>
+      <h1 class="font-display text-5xl md:text-7xl leading-[1.02] tracking-tight">
+        <span data-i18n="h1a">Истинска химия.</span><br>
+        <em class="text-ember-400" data-i18n="h1b">Без евтин шум.</em>
+      </h1>
+      <p class="mt-8 text-lg text-white/70 max-w-md" data-i18n="sub">Дискретно пространство за хора с вкус, неподправен интерес и разговори, които започват само когато привличането е взаимно.</p>
+      <div class="mt-10 flex items-center gap-6">
+        <a href="#" class="bg-jewel-500 hover:bg-jewel-600 text-plum-950 font-semibold rounded-full px-8 py-4 glow transition" data-i18n="cta">Влез в кръга</a>
+        <a href="#rhythm" class="text-white/70 hover:text-white transition" data-i18n="cta2">Виж ритъма →</a>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute -top-6 -right-2 text-3xl select-none">😈</div>
+      <div class="glass rounded-[2rem] p-3 portrait">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=900&q=80" alt="Портрет" class="rounded-[1.6rem] w-full h-[520px] object-cover">
+      </div>
+      <div class="glass absolute bottom-6 left-6 rounded-full px-5 py-2 text-sm flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-jewel-500"></span><span data-i18n="chip">Взаимно съвпадение</span>
+      </div>
+    </div>
+  </section>
+  <section class="glass rounded-2xl px-8 py-5 flex flex-wrap gap-x-10 gap-y-3 justify-center text-sm text-white/70 mb-24">
+    <span>✦ <span data-i18n="t1">100% взаимно съгласие</span></span>
+    <span>✦ <span data-i18n="t2">Без публични следи</span></span>
+    <span>✦ <span data-i18n="t3">Реални хора, без ботове</span></span>
+  </section>
+  <section class="mb-28 text-center">
+    <p class="font-display italic text-3xl md:text-5xl leading-tight max-w-4xl mx-auto">
+      „<span data-i18n="mani">Без спам в пощенската кутия. Никой не може да ти пише, преди ти да кажеш „да“.</span>“
+    </p>
+  </section>
+  <section id="rhythm" class="grid lg:grid-cols-[1.2fr_.8fr] gap-6 mb-28">
+    <div class="glass rounded-3xl p-10 flex flex-col justify-end min-h-[420px] relative overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=1200&q=80" alt="" class="absolute inset-0 w-full h-full object-cover opacity-30">
+      <div class="relative">
+        <h3 class="font-display text-4xl mb-4" data-i18n="c1t">Погледът първо.</h3>
+        <p class="text-white/70 max-w-sm" data-i18n="c1d">Големи снимки, естествено настроение и намерение, което се усеща преди първата дума.</p>
+      </div>
+    </div>
+    <div class="grid gap-6">
+      <div class="glass rounded-3xl p-8">
+        <h3 class="font-display text-2xl mb-3" data-i18n="c2t">Разговор само при съвпадение.</h3>
+        <p class="text-white/70" data-i18n="c2d">Чист текстов чат, отключен единствено от взаимен интерес. Без натиск, без алгоритмични игри.</p>
+      </div>
+      <div class="glass rounded-3xl p-8">
+        <h3 class="font-display text-2xl mb-3" data-i18n="c3t">Пълна дискретност.</h3>
+        <p class="text-white/70" data-i18n="c3d">Скриваем профил и инкогнито присъствие, когато искаш тишина и контрол.</p>
+      </div>
+    </div>
+  </section>
+  <section class="glass rounded-3xl p-10 mb-24 flex flex-col md:flex-row items-center gap-8 justify-between">
+    <div>
+      <h3 class="font-display text-3xl mb-2" data-i18n="sealt">Дискреция и доверие.</h3>
+      <p class="text-white/60 max-w-lg" data-i18n="seald">Твоят профил е видим само за хора, които сам ти одобриш. Няма публични листинги, няма изненадващи съобщения, няма фалшив шум.</p>
+    </div>
+    <a href="#" class="bg-jewel-500 hover:bg-jewel-600 text-plum-950 font-semibold rounded-full px-8 py-4 glow transition whitespace-nowrap" data-i18n="cta">Влез в кръга</a>
+  </section>
+</main>
+<footer class="max-w-6xl mx-auto px-6 py-10 text-sm text-white/40 flex justify-between">
+  <span>© Искра</span><span data-i18n="foot">Създадено за взаимно привличане.</span>
+</footer>
+<script>
+const I={
+ bg:{eyebrow:'Дискретен кръг',h1a:'Истинска химия.',h1b:'Без евтин шум.',sub:'Дискретно пространство за хора с вкус, неподправен интерес и разговори, които започват само когато привличането е взаимно.',cta:'Влез в кръга',cta2:'Виж ритъма →',login:'Вход',chip:'Взаимно съвпадение',t1:'100% взаимно съгласие',t2:'Без публични следи',t3:'Реални хора, без ботове',mani:'Без спам в пощенската кутия. Никой не може да ти пише, преди ти да кажеш „да“.',c1t:'Погледът първо.',c1d:'Големи снимки, естествено настроение и намерение, което се усеща преди първата дума.',c2t:'Разговор само при съвпадение.',c2d:'Чист текстов чат, отключен единствено от взаимен интерес. Без натиск, без алгоритмични игри.',c3t:'Пълна дискретност.',c3d:'Скриваем профил и инкогнито присъствие, когато искаш тишина и контрол.',sealt:'Дискреция и доверие.',seald:'Твоят профил е видим само за хора, които сам ти одобриш. Няма публични листинги, няма изненадващи съобщения, няма фалшив шум.',foot:'Създадено за взаимно привличане.'},
+ en:{eyebrow:'A discreet circle',h1a:'Unapologetic chemistry.',h1b:'Zero noise.',sub:'A discreet space for mutual fascination, genuine intent, and conversations that only spark when the feeling is reciprocal.',cta:'Enter the circle',cta2:'See the rhythm →',login:'Sign in',chip:'Mutual spark',t1:'Mutual consent only',t2:'No public traces',t3:'Real people, no bots',mani:'No inbox spam. Nobody can message you before you say yes.',c1t:'The look comes first.',c1d:'Large photography, natural mood, and intent you can feel before the first word.',c2t:'Conversation only after a match.',c2d:'A clean text-only chat, unlocked exclusively by mutual interest. No pressure, no algorithmic games.',c3t:'Full discretion.',c3d:'A hideable profile and incognito presence whenever you want quiet and control.',sealt:'Discretion and trust.',seald:'Your profile is visible only to people you approve. No public listings, no surprise messages, no fake noise.',foot:'Made for mutual attraction.'}
+};
+let lang='bg';
+document.getElementById('lang').onclick=()=>{lang=lang==='bg'?'en':'bg';document.getElementById('lang').textContent=lang==='bg'?'EN':'BG';document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=I[lang][el.dataset.i18n]);};
+</script>
+</body>
+</html>
